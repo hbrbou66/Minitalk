@@ -6,7 +6,7 @@
 /*   By: hbou-dou <hbou-dou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 11:37:32 by moaziz            #+#    #+#             */
-/*   Updated: 2025/02/14 13:58:34 by hbou-dou         ###   ########.fr       */
+/*   Updated: 2025/02/15 14:42:44 by hbou-dou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static void	send_char(int pid, unsigned char c)
 			kill(pid, SIGUSR1);
 		else
 			kill(pid, SIGUSR2);
-		usleep(500);
+		usleep(100);
 		i--;
 	}
 }
